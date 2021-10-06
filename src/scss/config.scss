@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    height: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    color: #000000;
+
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // background-image: url("../src/320.jpg");
+    // opacity: 0.5;
+
+    overflow-x: hidden;
+}
