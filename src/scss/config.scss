@@ -5,28 +5,36 @@ html {
 }
 
 body {
+    max-width: 1290px;
     min-width: 320px;
     height: 100%;
 
-    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 
     padding: 0;
 
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: normal;
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
     color: #000000;
 
-    background-color: #ffffff;
+    background-color: #fff;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 
     // background-image: url("../src/320.jpg");
     // opacity: 0.5;
-
-    overflow-x: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active) {

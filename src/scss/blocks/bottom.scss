@@ -1,0 +1,49 @@
+.bottom {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+
+    z-index: -1;
+
+    background-color: #333333;
+}
+
+.bottom__btn-star {
+    border: none;
+
+    background: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.bottom__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+// IE-11 fix
+:-ms-fullscreen,
+.bottom {
+    position: sticky;
+    bottom: 0px;
+    max-width: 1290px;
+    width: 100%;
+    margin-top: 165px;
+}
+
+:-ms-fullscreen,
+.bottom__link {
+    margin-right: 21px;
+}
+// IE-11 fix

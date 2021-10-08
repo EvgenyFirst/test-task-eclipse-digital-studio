@@ -21,16 +21,15 @@
   </h1>
 
   <header class="main-menu">
-    <div class="main-menu">
-      <div class="main-menu__container">
+    <div class="main-menu__wrapper">
+      <div class="main-menu__container main-menu__container-item-hide">
         <button type="button" class="main-menu__btn-star">
-          <img class="main-menu__img-star" src="img/mobile-star-top.svg" width="30" height="30"
-            alt="Кнопка звезды">
+          <img class="main-menu__img-star" src="img/mobile-star-top.svg" width="30" height="30" alt="Кнопка звезды">
         </button>
 
-        <button type="button" class="main-menu__btn-opened">
-          <img class="main-menu__img-opened" src="img/mobile-burger-menu-opened.svg" width="34"
-            height="35" alt="Открыть меню">
+        <button type="button" class="main-menu__btn-opened main-menu__btn-hidden">
+          <img class="main-menu__img-opened" src="img/mobile-burger-menu-opened.svg" width="34" height="35"
+            alt="Открыть меню">
         </button>
 
         <button type="button" class="main-menu__btn-closed">
@@ -39,7 +38,7 @@
         </button>
       </div>
 
-      <nav class="main-menu__navigation">
+      <nav class="main-menu__navigation main-menu__navigation-hidden">
         <ul class="main-menu__items">
           <li class="main-menu__item">
             <a href="#" class="main-menu__item-link">
@@ -62,14 +61,22 @@
   </header>
 
   <section class="info">
-    <div class="info__block">
-      <button type="button" class="info__btn-open">
-        Открыть меню
-      </button>
-    </div>
-    <div class="info__block info__block-special-one">
-      <div>
-        <p>
+    <div class="info__container">
+      <div class="info__block info__block-special-one">
+        <button type="button" class="info__btn-open">
+          <span class="info__btn-open-plus"></span>
+          Открыть меню
+        </button>
+      </div>
+      <div class="info__modal info__modal-window-hidden">
+        <div class="info__modal-window">
+          <button type="button" class="info__btn-modal">
+            <span class="info__btn-modal-span"></span>
+            Закрыть окно</button>
+        </div>
+      </div>
+      <div class="info__block info__block-special-two">
+        <p class="info__block-text">
           Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.
           Praesent ullamcorper blandit
@@ -77,31 +84,56 @@
           neque sagittis quis. Praesent
           et euismod lectus.
         </p>
-        <button type="button" class="info__btn-open">
-          Открыть меню
-        </button>
-      </div>
-      <div class="info__block info__block-special-two">
-        <button type="button" class="info__btn-open">
-          Открыть меню
+        <button type="button" class="info__btn-open info__btn-open-fix">
+          <span class="info__btn-open-plus"></span>
+          Открыть окно
         </button>
       </div>
       <div class="info__block info__block-special-three">
         <button type="button" class="info__btn-open">
-          Открыть меню
+          <span class="info__btn-open-plus"></span>
+          Открыть окно
         </button>
+      </div>
+      <div class="info__modal info__modal-window-hidden">
+        <div class="info__modal-window">
+          <button type="button" class="info__btn-modal">
+            <span class="info__btn-modal-span"></span>
+            Закрыть окно</button>
+        </div>
+      </div>
+      <div class="info__block info__block-special-four">
+        <button type="button" class="info__btn-open">
+          <span class="info__btn-open-plus"></span>
+          Открыть окно
+        </button>
+      </div>
+      <div class="info__modal info__modal-window-hidden">
+        <div class="info__modal-window">
+          <button type="button" class="info__btn-modal">
+            <span class="info__btn-modal-span"></span>
+            Закрыть окно</button>
+        </div>
       </div>
       <div class="info__block info__block-dog">
         <button type="button" class="info__btn-open">
-          Открыть меню
+          <span class="info__btn-open-plus"></span>
+          Открыть окно
         </button>
+      </div>
+    </div>
+    <div class="info__modal info__modal-window-hidden">
+      <div class="info__modal-window">
+        <button type="button" class="info__btn-modal">
+          <span class="info__btn-modal-span"></span>
+          Закрыть окно</button>
       </div>
     </div>
   </section>
 
   <footer class="bottom">
     <button type="button" class="bottom__btn-star">
-      <img class="bottom__img-star" src="img/mobile-star-bottom.svg" alt="Кнопка звезды">
+      <img class="bottom__img-star" src="img/mobile-star-bottom.svg" width="50" height="50" alt="Кнопка звезды">
     </button>
 
     <a class="bottom__link" href="#">Копирайт</a>
